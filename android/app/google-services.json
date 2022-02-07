@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "8299868956",
+    "project_id": "apego-dcebd",
+    "storage_bucket": "apego-dcebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8299868956:android:7cc42c5c16e24dc1fb40d9",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8299868956-ivb1lp1r3nidcfr4c59dpck5c7g3cud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ibaQD-qPmMeSpI4nSJHUBZVMyvbUJ1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8299868956-ivb1lp1r3nidcfr4c59dpck5c7g3cud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

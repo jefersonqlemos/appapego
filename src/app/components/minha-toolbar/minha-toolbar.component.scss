@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Allerta Stencil';
+    src: url('/assets/fonts/AllertaStencil-Regular.ttf') format('truetype');
+}
+
+ion-title {
+    color:#d31d1d;
+    font-family: 'Allerta Stencil', sans-serif;
+}

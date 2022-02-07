@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <app-minha-toolbar></app-minha-toolbar>
+  <ion-toolbar>
+    <ion-title size="small">Lista de Pedidos</ion-title>
+  
+  <ion-searchbar inputmode="numeric" (search)="searchIdKeyboardHide()" (ionChange)="searchId($event.target.value)" placeholder="Pesquisa Pelo ID"></ion-searchbar>
+</ion-toolbar>
+</ion-header>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let data of array;" href="/tabs/tab2"> 
+      <ion-label>
+        <h2>ID: {{data.idpedidos}}</h2>
+        <p><b>Status: {{data.status}}</b></p>
+        <p>Cliente: {{data.nome}} {{data.sobrenome}}</p>
+        <p>Data: {{data.date}} </p>
+      </ion-label>
+    </ion-item>
+      <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Carregando mais dados...">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+  </ion-list>
+  
+</ion-content>

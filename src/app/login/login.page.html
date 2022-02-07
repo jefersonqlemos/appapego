@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="assets/logo.png" ></ion-img>
+  <form (ngSubmit)="login()">
+  <ion-card>
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="email" name="email" placeholder="email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" [(ngModel)]="password" name="password" placeholder="senha" required></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button color="danger" type="submit" expand="block">Login</ion-button>
+  </form>
+  
+  
+</ion-content>

@@ -1,0 +1,9 @@
+{
+  "name": "appapego",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "c7ee6500"
+}
